@@ -1,0 +1,27 @@
+﻿@model DependencyInjectionDemo.Models.Employee
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+    <div class="container">
+        
+        
+
+            <form asp-action="Search" asp-controller="Employee">
+
+                <div class="form-group">
+
+                    <label asp-for="Id">Search by employee ID</label>
+                    <input asp-for="Id" class="form-control  col-md-4" placeholder="Enter ID"/>
+
+                </div>
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </form>
+        
+        
+    </div>
+
+
+
